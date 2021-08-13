@@ -1,0 +1,8 @@
+<ul class="sui-model-list" *ngIf="hasItems">
+  <li *ngFor="let item of items; index as idx; count as cnt; trackBy: trackByFn" class="sui-model-list-item">
+    <ng-container *ngTemplateOutlet="itemTpl || defaultItemTpl; context: getItemContext(item, idx, cnt)">
+    </ng-container>
+  </li>
+</ul>
+
+<ng-template #defaultItemTpl let-item>{{item}}</ng-template>

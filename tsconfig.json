@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "@plutoz01/ngx-smart-ui": [
+        "dist/plutoz01/ngx-smart-ui/plutoz01-ngx-smart-ui",
+        "dist/plutoz01/ngx-smart-ui"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

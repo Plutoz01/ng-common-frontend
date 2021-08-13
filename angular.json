@@ -3,5 +3,42 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "@plutoz01/ngx-smart-ui": {
+      "projectType": "library",
+      "root": "projects/plutoz01/ngx-smart-ui",
+      "sourceRoot": "projects/plutoz01/ngx-smart-ui/src",
+      "prefix": "sui",
+      "schematics": {
+        "@schematics/angular:component": {
+            "style": "scss"
+        }
+    },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/plutoz01/ngx-smart-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/plutoz01/ngx-smart-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/plutoz01/ngx-smart-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/plutoz01/ngx-smart-ui/src/test.ts",
+            "tsConfig": "projects/plutoz01/ngx-smart-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/plutoz01/ngx-smart-ui/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "@plutoz01/ngx-smart-ui"
 }
