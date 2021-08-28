@@ -1,5 +1,6 @@
 {
-  "name": "plutoz01",
+  "name": "plutoz01-ng-common-frontend",
+  "description": "A common project for my Angular related hobby projects",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,6 +12,7 @@
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook"
   },
+  "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.3",

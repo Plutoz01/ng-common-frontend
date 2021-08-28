@@ -1,27 +1,23 @@
-# Plutoz01
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
 
-## Development server
+# Brief introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is common project for my Angular related hobby apps and libs in a multi-project fashion.
 
-## Code scaffolding
+# Modules
+## ngx-smart-ui
+This is a demo library for common UI elements can be used by additional projects.
+### Build
+Run `ng build` to build the lib, since this is the default Angular project defined in `angular.json`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Storybook
 
-## Build
+Storybook is chosed as an interactive UI component showcase and documentation tool.
+Run `npm run storybook` command to compile and run Storybook server locally. This will open `http://localhost:6006` when ready.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Note: All changes in the library triggers an auto-build in Storybook to reflect changes, so no cold restart required during development just a refresh in the browser.
 
-## Running unit tests
+### Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Note: No headless browser has been configured yet (TODO).
