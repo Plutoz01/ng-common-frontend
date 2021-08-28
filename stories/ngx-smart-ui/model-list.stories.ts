@@ -13,9 +13,6 @@ export default {
 
 const UserTemplate: Story<ModelListComponent<UserModel>> = (args: ModelListComponent<UserModel>) => ({
   props: args,
-  styles: {
-
-  },
   template: `
     <sui-model-list [items]="items" [itemTpl]="itemTpl" [trackByFn]="trackByFn">
       <ng-template #itemTpl let-user>
